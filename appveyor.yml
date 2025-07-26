@@ -1,19 +1,20 @@
-version: "{build}"
-os: Windows Server 2019
-clone_folder: c:\projects\myproject
 environment:
-  matrix:
-    - NODE_VERSION: 16.x
+  nodejs_version: "18"
+
+branches:
+  only:
+    - master  # ветка git
+    - main
+
+cache: node_modules  # кеширование
 
 install:
-  - ps: Install-Product node $env:NODE_VERSION
-  - npm install
+  - npm install  # команда установки зависимостей
+
+build: off  # отключаем встроенную в appveyor систему сборки
 
 build_script:
-  - npm run build
+  - npm run build   # команда сборки
 
 test_script:
-  - npm test
-
-after_build:
-  - npm run dist
+  - npm run lint && npm test  # скрипт тестирования
