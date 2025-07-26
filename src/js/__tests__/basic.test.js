@@ -1,4 +1,4 @@
-import { determineHealthStatus } from '../app.js';
+ import { determineHealthStatus } from '../app.js';
 
 describe('Determine Health Status', () => {
   test('Player with high health should be healthy', () => {
