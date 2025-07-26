@@ -1,0 +1,16 @@
+TN:
+SF:src\js\app.js
+FN:1,determineHealthStatus
+FNF:1
+FNH:1
+FNDA:5,determineHealthStatus
+DA:2,5
+LF:1
+LH:1
+BRDA:2,0,0,1
+BRDA:2,0,1,4
+BRDA:3,1,0,3
+BRDA:3,1,1,1
+BRF:4
+BRH:4
+end_of_record
