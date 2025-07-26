@@ -1,0 +1,19 @@
+version: "{build}"
+os: Windows Server 2019
+clone_folder: c:\projects\myproject
+environment:
+  matrix:
+    - NODE_VERSION: 16.x
+
+install:
+  - ps: Install-Product node $env:NODE_VERSION
+  - npm install
+
+build_script:
+  - npm run build
+
+test_script:
+  - npm test
+
+after_build:
+  - npm run dist
