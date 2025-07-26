@@ -1,7 +1,6 @@
 {
   "name": "unit-testing2",
   "version": "1.0.0",
-  "description": "",
   "license": "ISC",
   "author": "Aleksey8205",
   "type": "module",
@@ -22,8 +21,10 @@
     "jest": "^30.0.5"
   },
   "dependencies": {
+    "17": "^0.0.0",
     "18": "^0.0.0",
-    "20": "^3.1.9",
+    "20": "^1.0.0",
     "core-js": "^3.44.0"
-  }
+  },
+  "description": ""
 }
