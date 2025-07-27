@@ -1,44 +1,20 @@
 {
-  "name": "unit-testing2",
+  "name": "testing",
   "version": "1.0.0",
-  "license": "ISC",
-  "author": "Aleksey8205",
-  "type": "module",
-  "main": "index.js",
+  "main": ".src/index.js",
   "scripts": {
-    "test": "jest",
-    "lint": "eslint ."
+    "test": "jest --coverage"
   },
+  "author": "Aleksey8205",
+  "license": "ISC",
+  "description": "",
   "devDependencies": {
     "@babel/cli": "^7.28.0",
     "@babel/core": "^7.28.0",
     "@babel/preset-env": "^7.28.0",
-    "@eslint/js": "^9.32.0",
-    "babel-jest": "^30.0.5",
-    "core-js": "^3.44.0",
-    "eslint": "^8.57.1",
-    "eslint-plugin-jest": "^28.0.0",
-    "eslint-plugin-react": "^7.37.5",
-    "globals": "^16.3.0",
-    "jest": "^29.7.0"
+    "jest": "^30.0.5"
   },
   "dependencies": {
-    "@babel/node": "^7.28.0",
-    "@babel/register": "^7.27.1",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.32.0"
-  },
-  "jest": {
-    "roots": ["<rootDir>/src/js"],                     
-    "testMatch": ["**/?(*.)+(spec|test).[jt]s?(x)"], 
-    "transform": {
-      "^.+\\.(js|jsx)$": "babel-jest"             
-    },
-    "setupFilesAfterEnv": [],                       
-    "collectCoverage": true,                       
-    "coverageDirectory": "coverage",               
-    "coverageProvider": "v8",                     
-    "resetMocks": true                            
-  },
-  "description": ""
+    "core-js": "^3.44.0"
+  }
 }
