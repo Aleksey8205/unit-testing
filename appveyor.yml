@@ -1,7 +1,6 @@
- environment:
+environment:
   nodejs_version: "24"
  
-
 branches:
   only:
     - master  # ветка git
