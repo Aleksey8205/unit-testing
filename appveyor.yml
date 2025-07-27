@@ -1,15 +1,12 @@
 environment:
-  nodejs_version: "18"
-
-branches:
-  only:
-    - master  # ветка git
-    - main
+  matrix:
+    - NODE_VERSION: "18"
 
 install:
-  - npm install  # команда установки зависимостей
+  - ps: Install-Product node $env:NODE_VERSION x64
+  - npm install
 
-build: off  # отключаем встроенную в AppVeyor систему сборки
+build: off
 
 test_script:
-  - npm run test  # скрипт тестирования
+  - npm run test
