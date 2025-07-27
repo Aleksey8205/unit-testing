@@ -6,7 +6,7 @@ install:
   - ps: Install-Product node $env:NODE_VERSION x64
   - npm install
   - npm uninstall jest
-  - npm install jest@latest
+  - npm install jest@^29.0.0
 
 build: off
 
