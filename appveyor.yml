@@ -3,10 +3,9 @@ environment:
     - NODE_VERSION: "20"
 
 install:
-  - ps: Install-Product node $env:NODE_VERSION x64
   - npm install
 
 build: off
 
 test_script:
-  - npm  test
+  - npm run test
