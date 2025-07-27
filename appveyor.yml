@@ -1,6 +1,6 @@
 environment:
   nodejs_version: "18"
- 
+
 branches:
   only:
     - master  # ветка git
@@ -9,7 +9,7 @@ branches:
 install:
   - npm install  # команда установки зависимостей
 
-build: off  # отключаем встроенную в appveyor систему сборки
+build: off  # отключаем встроенную в AppVeyor систему сборки
 
 test_script:
   - npm run test  # скрипт тестирования
